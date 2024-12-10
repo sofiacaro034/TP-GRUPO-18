@@ -7,5 +7,5 @@ El sistema se divide en dos procesos principales:
 **Generación de Recomendaciones**: Se procesan datos de logs de navegación y se computan métricas  como CTR y Top product. Los resultados se almacenan en una base de datos PostgreSQL en AWS RDS.
 
 
-**Servir las Recomendaciones** : Una API dockerizada, desplegada en AWS App Runner, permite acceder a las recomendaciones en tiempo real.
+**Disponibilizar las Recomendaciones** : Una API dockerizada, desplegada en AWS App Runner, permite acceder a las recomendaciones en tiempo real.
 El pipeline se ejecuta diariamente en una instancia de AWS EC2 mediante Apache Airflow, y los resultados se disponibilizan automáticamente.
